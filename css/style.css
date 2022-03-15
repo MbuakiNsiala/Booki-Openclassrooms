@@ -1,0 +1,741 @@
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+*
+{
+    font-family: 'Raleway', sans-serif;
+    
+    
+}
+
+.bloc-spin
+{
+    inset: 0;
+    background-color: #fff;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: disappear 200ms forwards;
+    animation-delay: 4s;
+}
+.loader
+{
+    border: 6px solid #fff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    
+}
+.loader-quart
+{
+    border-top: 6px solid #0065FC;
+    animation: spin 1s linear infinite;
+    
+}
+@keyframes spin
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes disappear
+{
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(0%);
+    }
+}
+/* ------------------- HEADER -------------------- */
+header
+{
+display: flex;
+justify-content: space-between;
+margin-top: -7px;
+}
+#header_nav
+{
+    display: flex;
+    width: 400px; 
+}
+#header_logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo img
+{
+    height: 50px;
+}
+
+.header_navhosting
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    text-align: center;
+    border-top: 2px solid #0065FC ;
+    color:#0065FC ;
+     
+}
+.header_navhosting a
+{
+    text-decoration: none;
+    color: #0065FC;
+}
+
+.header_navactivity:hover
+{
+    border-top: 2px solid #0065FC;
+}
+.header_navactivity
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    border-top: 2px solid white;
+    
+}
+.header_navactivity a 
+{
+    text-decoration: none;
+    color: black;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+/* -------------- HEADER END ------------- */
+
+/* ------------------- SEARCH -------------------- */
+.searchHeader
+{
+   margin-bottom: 5px; 
+   font-size: 2em;
+  
+}
+.searchForm
+{
+    display: flex;
+    height: 50px;
+    margin-bottom: 20px;   
+}
+
+
+.searchIcons
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2 ;
+    border-radius: 15px 0px 0px 15px;
+    width: 60px;
+    height: 50px;
+    
+    
+}
+
+
+
+input
+{
+    border: none;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+button
+{
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 120px;
+    border: none;
+    background-color:#0065FC;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+ button .searchIc {
+    display: none;
+}
+::placeholder
+{
+    font-weight: bold;
+    
+    
+}
+#searchFilters
+{
+  display: flex;
+}
+#searchFiltersmain /* Bloc Parent des filtres */
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+.searchIconsname1
+{
+    font-size: 1em;
+}
+.searchFilter1,  .searchFilter3
+
+{
+    height: 50px;
+    border: 2px solid#d9d9d9;
+    border-radius: 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.searchFilter2
+{
+    height: 50px;
+    border: 2px solid#d9d9d9;
+    border-radius: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchFilter4
+{
+    height: 50px;
+    border: 2px solid#d9d9d9;
+    border-radius: 30px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.searchFilter1, .searchFilter2, .searchFilter3, .searchFilter4, .searchFiltertitle
+{
+    margin-right: 25px;
+    font-size: 0.9em;
+}
+.searchFilter1:hover, .searchFilter2:hover, .searchFilter3:hover, .searchFilter4:hover
+{
+    background-color: #DEEBFF;
+    transform: scale(1.02);
+    transition: ease-in-out;
+    
+}
+.searchFilterIcons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    background-color:  #DEEBFF;
+    border-radius: 30px;
+    position: relative;
+    top: -0px;
+    left: -25px;
+    
+}
+.searchResultIcons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #F2F2F2;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+#searchResult
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 470px;
+
+}
+.searchFilterIcons i, .searchResultIcons i
+{
+    color: #0065FC;
+}
+/* ************** SEARCH END ************** */
+/* **************  HOSTING   ************** */
+#hostingParent
+{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
+
+}
+#hosting
+{
+    background-color:#F2F2F2 ;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 64%;
+    
+    
+}
+#hosting, #hostingPopular
+{
+    padding-top: 10px;
+}
+.hostingmain
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 92%;
+}
+.hostingsupportCard
+{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 485px;
+}
+
+.hostingsupportCard .Card_Hosting
+{
+    height: 200px;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 5px;
+    
+}
+.Card_Hosting
+{
+    box-shadow:6px 6px 5px #e0d9d9;
+    width: 25%;
+}
+
+.Card_Hosting:hover
+{
+    transform: scale(1.02);
+    transition: ease-in-out;
+}
+.hostingmainCardsupport
+{
+    
+    height: 197px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.hostingimg  img
+{
+    
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+}
+.hostingimginfo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    
+    
+
+}
+.hostingNameimg , .hostingprice , .star, .star2
+{
+  margin: 4px;
+    
+}
+.hostingNameimg , .hostingmainpopnameimg
+{
+    font-size: 1em;
+}
+
+.hostingmainNote
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: 4px;
+  
+
+}
+
+/* ****************** HOSTING POPULAR ************* */
+#hostingPopularmain
+{
+  
+    height: 580px;
+    width: 85%;
+}
+
+#hostingPopular
+{
+    background-color: #F2F2F2 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px;
+    justify-content: center;
+    width: 30%;
+  
+    
+}
+.Popular_blocHeader
+{
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+}
+.hostingPopularIcons
+{
+    display: flex;
+    align-items: center;
+}
+.hostingPopularIcons i
+{
+ font-size: 1.5em;
+}
+
+.Card_Popular
+{
+    height: 130px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow:6px 6px 5px #e0d9d9;
+    
+
+}
+.Card_Popular:hover
+{
+    transform: scale(1.02);
+    transition: ease-in-out;
+}
+.hostingPopulardCardsupport
+{
+    height: 127px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Popular_mainCard 
+
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 530px;
+    width: 86%;
+}
+
+
+.star
+{
+    color: #0065FC;
+    margin: 0px;
+}
+.star2
+{
+    color:#d8d7d7;
+    margin: 0px;
+    
+}
+
+.hostingpopularimg 
+{
+    height: 127px;
+    width: 33%;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    
+    
+}
+.hostingpopularimg img
+{
+   width: 100%;
+   height: 130px;
+   border-radius: 20px 0px 0px 20px;
+   object-fit: cover; 
+}
+.hostingpopimginfo
+{
+    height: 120px;
+    width: 62%;
+   
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.hostingmainpopnameimg
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+}
+.button_child_two
+{
+    font-size: 0.1em;
+    color: #0065FC;
+}
+
+.hostingpopnote
+{
+    display: flex;
+    justify-content: space-between;
+    width: 95px ;
+}
+.hostingnamepopimg, .hostingpopprice, .hostingmoreinfo h3
+{
+  margin: 0px;
+  font-size: 1em;
+}
+
+
+.hostingmainPopularCard:hover
+{
+    transform: scale(1.02);
+    transition: ease-in-out;
+}
+/************************* HOSTING POPULAR END ********************* */
+
+/************************ ALL ACTIVITY **************************** */
+#ActivityParent
+{
+    margin-bottom: 50px;
+}
+#Activitycontent
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.ActivityVieuxportmain, .ActivityCalanquesmain
+{
+ 
+    border-radius: 25px;
+    box-shadow: 6px 6px 5px #e0d9d9;
+    height: 550px;
+    width: 45%;
+}
+.ActivityVieuxportmain:hover, .ActivityCalanquesmain:hover,.Activity_pomeguecard:hover, .Activity_Longchampcard:hover, .Activity_notredamecard:hover, .Activity_frioulcard:hover
+{
+    transform: scale(1.02);
+    transition: ease-in-out;
+}
+.Vieuxpimg img, .Calanquesimg img
+{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+.Activitycardname /*Permet l'lalignement du titre des activités*/
+{
+   margin-left: 15px;
+   font-size: 1.2em;
+}
+.Activitymain_pomeguefrioul, .ActivityLongchampNDmain
+{
+    
+    height: 550px;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.Activity_pomeguecard, .Activity_Longchampcard
+{
+    height: 280px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow:6px 6px 5px #e0d9d9; 
+    object-fit: cover;
+    
+
+}
+.pomegueImg img, .longchampImg img
+{
+  width: 100%;
+  height: 210px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.Activity_frioulcard, .Activity_notredamecard
+{
+    height: 240px;
+    width: 100%;
+    box-shadow:6px 6px 5px #e0d9d9; 
+    border-radius: 20px;
+
+}
+.frioulImg img ,.notredameImg img
+{
+    height: 169px;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+
+}
+#Activity_blocleft, #Activity_blocright
+{
+    display: flex;
+    justify-content: space-between;
+    height: 580px;
+    width: 49%;
+    flex-wrap: wrap;
+} 
+/* *********************** ACTIVITY END ************************** */
+/* *********************** FOOTER ******************************** */
+footer
+{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+#footer_main
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 220px;
+  
+}
+.footercolumn
+{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.footer_Informationbloc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+}
+.footer_Informationbloc2 /* bloc hébergements et assistance car ils ne sont pas identique au bloc "A propos" */
+{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    
+}
+.footer_Informationbloc3 /* Permet grâce aux propriétés ci-dessous le même alignement que les "choix" du bloc "A propos" */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+/* ******************** MEDIA QUERIES ***************** */
+
+@media screen and (min-width :992px) and (max-width:1320px)
+{
+    main 
+    {
+        width: 90%;
+    }
+    .searchFilter1,  .searchFilter3,.searchFilter2,.searchFilter4
+       {
+          margin-bottom:  10px;
+        }
+    #hostingParent
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #hosting, #hostingPopular
+    {
+        width: 100%;
+    }
+    #hostingPopular
+    {
+        margin-bottom: 50px;
+        height: 270px;
+        align-items: center;
+    }
+    h3 
+    {
+        padding-bottom: 20px;
+    }
+    .Popular_mainCard
+    {
+        flex-direction: row;
+        width: 93%;
+        
+    }
+    #hostingPopularmain
+    {
+        width: 93%;
+        height: 0px;
+    }
+    .Card_Popular
+    {
+        width: 30%;
+    }
+    #Activitycontent
+    {
+        flex-direction: column-reverse;
+    }
+    #Activity_blocleft, #Activity_blocright
+    {
+        width: 100%;
+    }
+    .Popular_blocHeader
+    {
+        width: 90%;
+    }
+}

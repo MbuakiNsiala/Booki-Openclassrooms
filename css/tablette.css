@@ -1,0 +1,106 @@
+
+main
+{
+    width: 90%;
+}
+.bloc-spin
+{
+    inset: 0;
+    background-color: #fff;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: disappear 200ms forwards;
+    animation-delay: 4s;
+}
+.loader
+{
+    border: 6px solid #fff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    
+}
+.loader-quart
+{
+    border-top: 6px solid #0065FC;
+    animation: spin 1s linear infinite;
+    
+}
+@keyframes spin
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes disappear
+{
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(0%);
+    }
+}
+.searchHeader
+{
+    margin-top: 0px;
+}
+#searchParent, #searchFilters
+{
+    margin-bottom: 20px;
+}
+.searchFilter1,  .searchFilter3,.searchFilter2,.searchFilter4
+{
+    margin-bottom:  10px;
+}
+#hostingParent
+{
+    display: flex;
+    flex-direction: column-reverse;  
+}
+#hostingPopular
+{
+    margin-bottom: 50px;
+    width: 100%;
+}
+#hosting
+{
+    width: 100%;
+}
+
+
+.hostingsupportCard .Card_Hosting
+{
+    width: 47%;
+    box-shadow: 6px 6px 6px #F2F2F2;
+}
+.hostingsupportCard
+{
+    height: 730px;
+}
+
+.hostingHeader ,.hostingmoreinfo
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#Activitycontent
+{
+    flex-direction: column;
+}
+#Activity_blocleft, #Activity_blocright
+{
+    width: 100%;
+}
+#footer_main
+{
+    width: 90%;
+}
