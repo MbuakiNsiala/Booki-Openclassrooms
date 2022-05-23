@@ -13,6 +13,10 @@ main
     
     
 }
+h1 , h2, input
+{
+    font-weight: bold 700 ;
+}
 
 .bloc-spin
 {
